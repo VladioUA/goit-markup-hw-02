@@ -1,0 +1,73 @@
+:root {
+    --background-color-white: #f5f5f5;
+    --background-color-grey: #f5f4fa;
+    --background-color-dark: #2f303a;
+    --text-black: #212121;
+    --text-gray: #757575;
+    --text-blue: #2196f3;
+    --text-white: #ffffff;
+    --text-white-transp: rgba(255, 255, 255, 0.6);
+}
+/* приховування елементів */
+.style {
+    list-style: none;
+}
+.h2 {
+    display: none;
+}
+/* стилістика сторінки */
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+.h2,
+.h3 {
+    color: var(--text-black);
+}
+.h1 {
+    color: var(--text-white);
+    /* Чомусь не спрацьовує колір */
+}
+.logo {
+    font-family: 'raleway';
+    color: var(--text-black);
+    outline: none;
+    text-decoration: none;
+}
+.logo:hover,
+.logo:focus {
+    color: var(--text-blue);
+    cursor: pointer;
+}
+.navigation-link {
+    outline: none;
+    text-decoration: none;
+}
+/*.nav-address {
+    outline: none;
+    text-decoration: none;
+    background-color: aqua;
+} */
+.accent {
+    color: var(--text-blue);
+}
+.navigation-link:hover,
+.navigation-link:focus,
+.address:hover,
+.address:focus {
+    color: var(--text-blue);
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--text-white);
+    background-color: var(--text-blue);
+    border-color: var(--text-blue);
+    cursor: pointer;
+}
+p {
+    color: var(--text-gray);
+}
+.navigation-link {
+    color: var(--text-black);
+}

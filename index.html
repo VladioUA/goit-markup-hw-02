@@ -6,35 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+    </style>
 </head>
 
 <body>
     <header class="header">
-        <nav>
-            <a class="logo" href="/index.html">WebStudio</a>
-            <ul class="list">
-                <li>
-                    <a class="list-item" href="">
+        <nav class="navigation">
+            <a class="logo" href="/index.html"><span class="accent">Web</span>Studio</a>
+            <ul class="list style">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="/">
                         Студія
                     </a>
                 </li>
-                <li>
-                    <a class="list-item" href="">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="./portfolio.html">
                         Портфоліо
                     </a>
-                </li>
+                </li class="navigation-item">
                 <li>
-                    <a class="list-item" href="">
+                    <a class="navigation-link" href="/">
                         Контакти
                     </a>
                 </li>
             </ul>
         </nav>
-        <ul class="list">
-            <li class="list-item">
+        <ul class="list style">
+            <li class="nav-address">
                 <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="list-item">
+            <li class="nav-address">
                 <a href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
@@ -42,12 +46,11 @@
     <main>
         <section class="cap">
             <h1>Ефективні рішення для вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
+            <button class="btn" type="button">Замовити послугу</button>
         </section>
         <section class="features">
-            <!--Wait the text for <h2>
-            <h2></h2>-->
-            <ul class="list">
+            <h2 class="h2">Наші можливості</h2>
+            <ul class="list style">
                 <li class="list-item">
                     <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -68,8 +71,8 @@
 
         </section>
         <section class="what we do">
-            Чим ми займаємося
-            <ul class="list">
+            <h2>Чим ми займаємося</h2>
+            <ul class="list style">
                 <li class="list-item"><img class="icon" src="./images/box1.jpg" alt="img pc" width="370" height="294">
                 </li>
                 <li class="list-item"><img class="icon" src="./images/box2.jpg" alt="img phone" width="370"
@@ -79,8 +82,8 @@
             </ul>
         </section>
         <section class="our team">
-            Наша команда
-            <ul class="list">
+            <h2>Наша команда</h2>
+            <ul class="list style">
                 <li class="list-item"><img class="icon" src="./images/team_card1.jpg" alt="team_card1" width="270"
                         height="260">
                     <h3>Ігор Дем'яненко</h3>
@@ -105,14 +108,13 @@
         </section>
     </main>
     <footer class="footer">
-        <a class="logo" href="">
-            WebStudio
-        </a>
+        <a class="logo" href="/index.html"><span class="accent">Web</span>Studio</a>
         <ul class="list">
             <address>
-                <ul>
+                <ul class="list style">
                     <li class="list-item">
-                        <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/tom3UApo5Y3eRkke6">
+                        <a class="list-address" target="_blank" rel="noopener noreferrer"
+                            href="https://goo.gl/maps/tom3UApo5Y3eRkke6">
                             м. Київ, пр-т Лесі Українки, 26
                         </a>
                     </li>
@@ -125,7 +127,6 @@
                 </ul>
             </address>
         </ul>
-
     </footer>
 </body>
 
