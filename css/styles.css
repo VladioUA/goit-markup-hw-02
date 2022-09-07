@@ -2,6 +2,7 @@
     --background-color-white: #f5f5f5;
     --background-color-grey: #f5f4fa;
     --background-color-dark: #2f303a;
+    --background-color-blue: #2196F3;
     --text-black: #212121;
     --text-gray: #757575;
     --text-blue: #2196f3;
@@ -19,20 +20,40 @@
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+    border: 215px;
 }
 .h2,
 .h3 {
     color: var(--text-black);
 }
-.h1 {
+h1 {
     color: var(--text-white);
-    /* Чомусь не спрацьовує колір */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.navigation-item,
+.nav-address {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 .logo {
     font-family: 'raleway';
     color: var(--text-black);
     outline: none;
     text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    
 }
 .logo:hover,
 .logo:focus {
@@ -43,11 +64,15 @@ body {
     outline: none;
     text-decoration: none;
 }
-/*.nav-address {
+.nav-address a{
     outline: none;
     text-decoration: none;
-    background-color: aqua;
-} */
+    color: var(--text-gray);
+}
+.nav-address a:hover,
+.nav-address a:focus {
+    color: var(--text-blue);
+}
 .accent {
     color: var(--text-blue);
 }
@@ -58,10 +83,13 @@ body {
     color: var(--text-blue);
     cursor: pointer;
 }
-
-.button:hover {
+.navigation-link.active {
+    color: var(--text-blue);
+}
+.button:hover,
+.button:focus {
     color: var(--text-white);
-    background-color: var(--text-blue);
+    background-color: var(--background-color-blue);
     border-color: var(--text-blue);
     cursor: pointer;
 }
@@ -70,4 +98,66 @@ p {
 }
 .navigation-link {
     color: var(--text-black);
+}
+.div-cap {
+    background-color: var(--background-color-dark);
+}
+.div-cap .btn {
+    background-color: var(--background-color-blue);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+.div-team {
+    display: flex;
+    background-color: var(--background-color-grey);
+}
+/* Footer */
+.footer {
+    background-color: var(--background-color-dark);
+}
+.street {
+    color: var(--text-white);
+}
+.contact a{
+    outline: none;
+    text-decoration: none;
+    color: var(--text-white-transp);
+}
+.logo-footer {
+    font-family: 'raleway';
+    outline: none;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--text-white)
+}
+.logo-footer:hover,
+.logo-footer:focus {
+    color: var(--text-blue);
+    cursor: pointer;
+}
+.list-item a:hover,
+.list-item a:focus {
+    color: var(--text-blue);
+    cursor: pointer;
+}
+.list-address {
+    outline: none;
+    text-decoration: none;
 }
