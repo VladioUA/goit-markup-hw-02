@@ -22,7 +22,7 @@
 }
 /* стилістика сторінки */
 body {
-    background-color: var(--background-color-white);
+    background-color: var(--background-color-clear-white);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     border: 215px;
@@ -163,12 +163,6 @@ body {
     color: var(--text-blue);
 }
 /* BUTTONS */
-.filters .button {
-    text-align: center;
-    letter-spacing: 0.03em;
-    background-color: var(--background-color-grey);
-    border-color: none; <------ STOP
-}
 
 .button:hover,
 .button:focus {
@@ -179,7 +173,6 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-
 .navigation-link {
     color: var(--text-black);
 }
@@ -261,10 +254,83 @@ body {
     height: 100%;
     background-color: var(--background-color-clear-white);
 }
+.filters .btn {
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--background-color-grey);
+    color: var(--text-black);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 4px;
+    border: none;
+    margin-left: 8px;
+    font-family: 'Roboto'
+}
+
+.filters .list:first-child {
+    margin-left: 0;
+}
+
+.filters .btn:hover,
+.filters .btn:focus {
+    background-color: var(--background-color-blue);
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.filters .btn {
+    padding: 6px 22px;
+}
+
+.filters .first {
+    padding: 6px 25px;
+}
+
+.portfolio {
+    background-color: var(--background-color-clear-white);
+}
+
+.portfolio .item {
+    margin-left: var(--offset-size);
+    margin-bottom: var(--offset-size);
+
+}
+
+.portfolio .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+.portfolio .text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--text-gray);
+}
+.portfolio .list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+.portfolio-text {
+    border: 1px;
+    border-color: #EEEEEE;
+    border-style: solid;
+    padding: 20px 24px;
+} 
+.portfolio:last-child {
+    margin-bottom: 94px;
+} 
+
 .street {
     color: var(--text-white);
 }
-.contact a{
+.footer .link {
     outline: none;
     text-decoration: none;
     color: var(--text-white-transp);
