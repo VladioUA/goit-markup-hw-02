@@ -25,9 +25,6 @@ body {
     background-color: var(--background-color-clear-white);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
-    /* border: 215px;
-    margin: 0px;
-    padding: 0px; */
 }
 
 .main-title {
@@ -51,7 +48,7 @@ body {
 .header {
     background-color: var(--background-color-clear-white);
     height: 80px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-content {
     display: flex;
@@ -277,7 +274,7 @@ body {
     padding: 6px 22px;
 }
 
-.filters .first {
+.filters .btn:first-child {
     padding: 6px 25px;
 }
 
@@ -308,11 +305,11 @@ body {
     width: 1200px;
 }
 .portfolio-text {
-    border: 1px;
-    border-color: #EEEEEE;
-    border-style: solid;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
     padding: 20px 24px;
-} 
+}
 .portfolio:last-child {
     margin-bottom: 94px;
 } 
