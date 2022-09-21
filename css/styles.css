@@ -40,6 +40,7 @@ body {
 }
 .btn {
     margin-top: var(--offset-size);
+    font-family: inherit;
 }
 .container {
     margin: 0 auto;
@@ -210,6 +211,7 @@ body {
 }
 .our-team .title {
     color: var(--text-black);
+    font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
@@ -256,7 +258,6 @@ body {
     border-radius: 4px;
     border: none;
     margin-left: 8px;
-    font-family: 'Roboto'
 }
 
 .filters .list:first-child {
@@ -323,11 +324,9 @@ body {
     color: var(--text-white-transp);
 }
 .logo-footer {
-    font-family: 'raleway';
     outline: none;
     text-decoration: none;
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
@@ -352,4 +351,7 @@ body {
 .list-address {
     outline: none;
     text-decoration: none;
+}
+.footer .address {
+    font-style: normal;
 }
